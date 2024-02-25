@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-img{
+    width: 5%;
+}
+
+.header-img{
+    width: 30%;
+}
+
+#chartContainer{
+    height: 700px;
+    width: 100%;
+}
