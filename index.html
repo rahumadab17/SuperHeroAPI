@@ -25,8 +25,8 @@
             <img src="assets/img/sh1.jpg" alt="imagen super heroes 1" class="my-5 header-img">
         </div>
         <div class="px-5">
-            <h1>Encuentra tu SuperHero</h1>
-            <h5>Ingresa el número del SuperHero que quieres buscar</h5>
+            <h1>Encuentra tu superhéroe</h1>
+            <h5>Ingresa el número del superhéroe que quieres buscar (1 - 731)</h5>
             <form id="formularioSuperHero">
                 <div class="my-3">
                   <input id="superHero-Id" class="form-control" type="number">
@@ -38,32 +38,32 @@
     </header>
 
     <!-- RESULTADOS -->
-    <section>
-        <div class="row">
-            <div class="col-6">
-                <h4 class="text-center">SuperHero Encontrado</h4>
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="" id="img-superhero" class="img-fluid rounded-start" alt="superhero image">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 id="nombreSuperHero" class="card-title">Nombre: </h5>
-                          <p id="conexionesSuperHero" class="card-text">Conexiones: </p>
-                          <p id="publicadoSuperHero" class="card-text ms-4"><i>Publicado por</i>: </p><hr>
-                          <p id="ocupacionSuperHero" class="card-text ms-4"><i>Ocupación</i>: </p><hr>
-                          <p id="aparicionSuperHero" class="card-text ms-4"><i>Primera Aparición</i>: </p><hr>
-                          <p id="alturaSuperHero" class="card-text ms-4"><i>Altura</i>: </p><hr>
-                          <p id="pesoSuperHero" class="card-text ms-4"><i>Peso</i>: </p><hr>
-                          <p id="alianzasSuperHero" class="card-text ms-4"><i>Alianzas</i>: </p>
-                        </div>
-                      </div>
+    <section id="noshow" class="container-flex my-5">
+              <div class="row justify-content-evenly">
+                    <div class="col-5">
+                        <h4 class="text-center">Super Hero Encontrado</h4>
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="" id="img-superhero" class="img-fluid rounded-start h-100" alt="superhero image">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 id="nombreSuperHero" class="card-title">Nombre: </h5>
+                                  <p id="conexionesSuperHero" class="card-text">Conexiones: </p>
+                                  <p id="publicadoSuperHero" class="card-text ms-4"><i>Publicado por</i>: </p><hr>
+                                  <p id="ocupacionSuperHero" class="card-text ms-4"><i>Ocupación</i>: </p><hr>
+                                  <p id="aparicionSuperHero" class="card-text ms-4"><i>Primera Aparición</i>: </p><hr>
+                                  <p id="alturaSuperHero" class="card-text ms-4"><i>Altura</i>: </p><hr>
+                                  <p id="pesoSuperHero" class="card-text ms-4"><i>Peso</i>: </p><hr>
+                                  <p id="alianzasSuperHero" class="card-text ms-4"><i>Alianzas</i>: </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                  </div>
-            </div>
-            <div class="col-6" id="chartContainer"></div>
-        </div>
+                  <div class="col-7" id="chartContainer"></div>
+              </div>
     </section>
 
 

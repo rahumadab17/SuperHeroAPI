@@ -19,7 +19,7 @@ $(document).ready(function(){
     }
 
     function exito() {
-        document.querySelector(".resultado").innerHTML = "Super Héroe encontrado!";
+        document.querySelector(".resultado").innerHTML = "Hemos encontrado a tu superhéroe!";
     };
 
     function validar(numero) {
@@ -28,7 +28,7 @@ $(document).ready(function(){
         let validacionNumero = /^[0-9]+$/;
     
         if (validacionNumero.test(numero) == false || numero <1 || numero > 731) {
-            document.querySelector(".errorNumero").innerHTML = "El numero es requerido. Favor ingrese un numero de 1 a 731"
+            document.querySelector(".errorNumero").innerHTML = "El número que ingresaste no es válido o está fuera del rango solicitado"
             pasamosLaValidacion = false;
         };
     
@@ -41,6 +41,7 @@ $(document).ready(function(){
             url: `https://superhero.arielhernandezcl.workers.dev/${id}`,
             dataType:"json",
             success: function(data){
+                    $('#noshow').show();
                     $('#img-superhero').attr('src', data.image.url);
                     $('#nombreSuperHero').text(`${data.name}`);
                     $('#conexionesSuperHero').text(`${data.connections['group-affiliation']}`);

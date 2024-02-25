@@ -12,6 +12,29 @@ body {
 }
 
 #chartContainer{
-    height: 700px;
-    width: 100%;
+    width: auto;
+    height: 500px;
+}
+
+.container-resultados {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#noshow {
+    display: none;
+}
+
+.errorNumero{
+    color: red;
+}
+
+.resultado {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 211, 0);
+}
+
+#chartContainer {
+    width: 700px;
 }
