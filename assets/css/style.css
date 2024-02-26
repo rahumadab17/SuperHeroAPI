@@ -38,3 +38,29 @@ body {
 #chartContainer {
     width: 700px;
 }
+
+@media screen and (max-width: 576px){
+    body{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .col-md-4{
+        text-align: center;
+    }
+    .img-fluid{
+        width: 50%;
+        height: 50%;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px){
+    .col-md-4{
+        text-align: center;
+    }
+    .img-fluid{
+        width: 50%;
+        height: 50%;
+    }
+    
+}
