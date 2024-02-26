@@ -2,18 +2,18 @@ $(document).ready(function(){
     let form = document.getElementById("formularioSuperHero");
     form.addEventListener("submit", function (event) {
         event.preventDefault();
-        limpiar();
+        limpiarInputs();
     
         let superHeroId = document.querySelector("#superHero-Id").value;
-        let resultado = validar(superHeroId);
+        let resultado = validarId(superHeroId);
     
         if (resultado == true) {
-            superHero(superHeroId);
+            mostrarSuperHero(superHeroId);
             exito();
         };
     });
     
-    function validar(numero) {
+    function validarId(numero) {
         let pasamosLaValidacion = true;
     
         let validacionNumero = /^[0-9]+$/;
@@ -26,7 +26,7 @@ $(document).ready(function(){
         return pasamosLaValidacion;
     };
 
-    function limpiar() {
+    function limpiarInputs() {
         document.querySelector(".resultado").innerHTML = "";
         document.querySelector(".errorNumero").innerHTML = "";
     }
@@ -35,7 +35,7 @@ $(document).ready(function(){
         document.querySelector(".resultado").innerHTML = "Hemos encontrado a tu superhéroe!";
     };
 
-    function superHero(id){
+    function mostrarSuperHero(id){
         $('#btn-superHero').SuperHero(id)
         $('#btn-superHero').SuperHeroChart(id)
     };
