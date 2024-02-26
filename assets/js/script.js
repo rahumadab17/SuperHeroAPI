@@ -19,7 +19,8 @@ $(document).ready(function(){
         let validacionNumero = /^[0-9]+$/;
     
         if (validacionNumero.test(numero) == false || numero < 1 || numero > 731) {
-            document.querySelector(".errorNumero").innerHTML = "El número que ingresaste no es válido o está fuera del rango solicitado"
+            document.querySelector(".errorNumero").innerHTML = "El número que ingresaste no es válido o está fuera del rango solicitado";
+            alert("El número que ingresaste no es válido o está fuera del rango solicitado");
             pasamosLaValidacion = false;
         };
     

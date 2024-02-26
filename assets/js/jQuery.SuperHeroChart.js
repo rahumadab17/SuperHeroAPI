@@ -30,6 +30,9 @@ jQuery.fn.SuperHeroChart = function(id){
                 $("#chartContainer").CanvasJSChart(options);
         },
         error: function(error){
+            if (error){
+                alert("Hubo un error al intentar crear el gráfico, porfavor actualiza la página")
+            }
             console.log(error)
         }
     });

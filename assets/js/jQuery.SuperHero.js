@@ -16,7 +16,10 @@ jQuery.fn.SuperHero = function(id){
                 $('#alianzasSuperHero').html(`<i>Alianzas</i>: ${data.biography.aliases}`);
         },
         error: function(error){
-            console.log(error);
+            if (error){
+                alert("Hubo un error al mostrar tu superhéroe, porfavor actualiza la página")
+            }
+            console.log(error)
         }
     });
 };
