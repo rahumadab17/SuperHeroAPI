@@ -86,6 +86,9 @@ $(document).ready(function(){
                         }]
                     };
                     $("#chartContainer").CanvasJSChart(options);
+            },
+            error: function(error){
+                console.log(error)
             }
         });
     };
